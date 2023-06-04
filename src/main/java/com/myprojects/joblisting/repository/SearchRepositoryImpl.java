@@ -1,10 +1,11 @@
-package com.myprojects.joblisting;
+package com.myprojects.joblisting.repository;
 
 import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.myprojects.joblisting.model.JobPost;
+import com.myprojects.joblisting.repository.SearchRepository;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.convert.MongoConverter;
@@ -15,7 +16,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-public class SearchRepositoryImpl implements SearchRepository{
+public class SearchRepositoryImpl implements SearchRepository {
     @Autowired
     MongoClient mongoClient;
 

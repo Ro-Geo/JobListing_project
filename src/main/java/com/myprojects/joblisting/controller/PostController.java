@@ -1,9 +1,8 @@
 package com.myprojects.joblisting.controller;
 
-import com.myprojects.joblisting.SearchRepository;
-import com.myprojects.joblisting.SearchRepositoryImpl;
+import com.myprojects.joblisting.repository.SearchRepository;
 import com.myprojects.joblisting.model.JobPost;
-import com.myprojects.joblisting.JobPostRepository;
+import com.myprojects.joblisting.repository.JobPostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
